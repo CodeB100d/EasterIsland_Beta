@@ -1,0 +1,253 @@
+@font-face{font-family:'museo-slab';src:url('../font/museo_slab_300-webfont.eot');src:url('../font/museo_slab_300-webfont.eot?#iefix') format('embedded-opentype'),url('../font/museo_slab_300-webfont.ttf') format('truetype');font-weight:normal;font-style:normal}@font-face{font-family:'museo-slab';src:url('../font/museo_slab_500-webfont.eot');src:url('../font/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),url('../font/museo_slab_500-webfont.ttf') format('truetype');font-weight:bold;font-style:normal}@font-face{font-family:'proxima-nova';src:url('../font/proximanova-webfont.eot');src:url('../font/proximanova-webfont.eot?#iefix') format('embedded-opentype'),url('../font/proximanova-webfont.ttf') format('truetype');font-weight:normal;font-style:normal}@font-face{font-family:'proxima-nova';src:url('../font/proximanova-sbold-webfont.eot');src:url('../font/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),url('../font/proximanova-sbold-webfont.ttf') format('truetype');font-weight:bold;font-style:normal}
+body{
+	margin:0;
+	padding:50px 0 0 200px;
+	font-family: proxima-nova, Helvetica, Arial, sans-serif;
+	background-color:#f1f1f1;
+	background-image:url('../img/white_texture.png');
+}
+h1, h2, h3, h4, h5, h6, legend{
+	font-family:'museo-slab';
+}
+div#header{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:48px;
+	background:lime;
+	background-color:#ccc;
+	max-height:50px;
+	line-height:50px;
+	border-bottom:solid 2px #ccc;
+}
+div#left-sidebar{
+	position:absolute;
+	top:50px;
+	left:0;
+	width:200px;
+	height:95%;
+	background:#eee;
+	color:black;
+	overflow: auto;
+	overflow-x:hidden;
+	background-image:url('../img/left_bg.jpg');
+	border-right: 1px solid #ccc;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+@media screen{
+	body>div#header{
+		position:fixed;
+	}
+	body>div#left-sidebar{
+		position:fixed;
+	}
+}
+* html body{
+	overflow:hidden;
+} 
+* html div#content{
+	height:100%;
+	overflow:auto;
+}
+
+
+
+.nav-header{
+	padding:5px 20px 5px 30px;
+}
+
+ul#left_menu {
+
+}
+
+ul#left_menu li {
+	border-top:#ffffff thin solid;
+	border-bottom:#adadad thin solid;
+}
+
+ul#left_menu li a {
+	display: block;
+	text-decoration: none;
+	font-weight: bolder;
+	font-family: DeliciousRoman, Helvetica, Arial, sans-serif;
+	font-size:12.5px;
+	padding:5px 20px 5px 30px;
+}
+
+ul#left_menu li a:hover {
+	background-color:#016f8a;
+	color:#fff;
+}
+
+ul#left_menu ul {
+	
+}
+
+ul#left_menu ul li {
+	margin: 0;
+	clear: both;
+	list-style:none;
+	border-top:#eee thin solid;
+	border-bottom:#ccc thin solid;
+}
+
+ul#left_menu ul li a {
+	font-size:11.5px;
+	outline:0;
+	padding-left: 50px;
+	color:#333;
+}
+
+ul#left_menu ul li a:hover {
+	background-color:#999;
+	color:#fff;
+	text-shadow: 1px 1px 1px #000;
+	border:none;
+}
+
+ul#left_menu ul ul li a {
+	color:silver;
+}
+
+ul#left_menu ul ul li a:hover {
+	color:#675C7C;
+}
+
+ul#left_menu span{
+	float:right;
+}
+
+div.sub_nav{
+	background-color:#ccc;
+}
+
+.clear{
+	clear:both;
+}
+
+#logo{
+	float:left;
+	width;200px;
+	padding:0 0 0 10px
+}
+#user{
+	margin-right:20px;
+}
+
+.breadcrumbs {
+	float: left;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 0 #fff;
+	-moz-box-shadow: 0 1px 0 #fff;
+	box-shadow: 0 1px 0 #fff;
+	height: 23px;
+	font-weight: bold;
+	line-height: 23px;
+	font-family: DeliciousRoman, Helvetica, Arial, sans-serif;
+	font-size:12px;
+}
+.breadcrumbs a {
+	display: inline-block;
+	float: left;
+	height: 24px;
+	line-height: 23px;
+}
+
+.breadcrumbs span {
+	display: inline-block;
+	float: left;
+	height: 24px;
+	line-height: 23px;
+}
+
+.breadcrumbs a.current, .breadcrumbs a.current:hover {
+	font-weight: bold;
+	text-shadow: 0 1px 0 #fff;
+	text-decoration: none;
+}
+
+.breadcrumb_divider {
+	display: inline-block;
+	width: 12px;
+	height: 24px;
+	background: url(../img/breadcrumb_divider.png) no-repeat;
+	float: left;
+	margin: 0 5px;
+}
+
+#breadcrumbs_container{
+	background-color:#eee;
+	padding:5px;
+	padding-left:10px;
+	padding-right: 20px;
+	background-color: #fafafa;
+	background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+	border-bottom: 1px solid #d4d4d4;
+	border-left: 1px solid #d4d4d4;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	*zoom: 1;
+}
+
+.inner_tube{
+	padding:15px;
+}
+
+.white_box{
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 0 #fff;
+	-moz-box-shadow: 0 1px 0 #fff;
+	box-shadow: 0 1px 0 #fff;
+	background-color:#fff;
+	margin-bottom:20px;
+}
+
+#project_title{
+	font-size:15px;
+	margin-left:10px;
+	color:#666;
+}
+
+thead{
+	background-color: #ededed;
+	background-image: -moz-linear-gradient(top, #f2f2f2, #e5e5e5);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e5e5e5));
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #e5e5e5);
+	background-image: -o-linear-gradient(top, #f2f2f2, #e5e5e5);
+	background-image: linear-gradient(to bottom, #f2f2f2, #e5e5e5);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2f2f2', endColorstr='#ffe5e5e5', GradientType=0);
+	border-color: #e5e5e5 #e5e5e5 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #e5e5e5;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
+}
